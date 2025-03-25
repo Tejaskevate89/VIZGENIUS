@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+.main .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 30px 50px;
+}
+
+
+.main .nav .nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.main .nav .nav-1 img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.main .nav .nav-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.main .hero img {
+    height: 20px;
+    width: 20px;
+
+}
+
+.main .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 60px 10px;
+    position: relative;
+}
+
+.main .hero h1 {
+    font-size: 8rem;
+    font-weight: 500;
+}
+
+.main .hero p {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    padding: 30px 300px;
+    text-align: center;
+    font-style: normal;
+}
+
+.main .apps {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+
+.main .apps div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+    padding: 40px 40px;
+    text-align: center;
+    transform: scale(1);
+    transition: all 2s;
+    z-index: 0;
+   
+}
+
+.main .apps div a {
+    text-decoration: none;
+}
+
+.main .apps div a::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #00affa;
+    transition: width 0.3s; /* Added transition for smooth effect */
+}
+
+.main .apps div a:hover::after {
+    width: 0;
+}
+
+.main .apps div:hover {
+    transform: scale(1.2);
+    border: 0;
+}
+
+.main .apps div:hover > h3 {
+    color: white;
+    z-index: 1;
+}
+
+
+.main .apps div h2 {
+    font-size: 3rem;
+}
+
+.main .apps div h3 {
+    font-size: 1rem;
+    color: grey;
+    font-weight: 200;
+}
+
+footer {
+    margin: 50px;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 300px;
+}
+
+@keyframes textShine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  footer span {
+    font-size: clamp(2.8rem, 1.5vw, 3rem);
+    font-weight: bold;
+    margin: 5px;
+    background: linear-gradient(
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+  }
+
+  .main .hero h1 {
+    transform: scale(2);
+    background: linear-gradient(
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+  }
+
+
+
+
+
+
+
